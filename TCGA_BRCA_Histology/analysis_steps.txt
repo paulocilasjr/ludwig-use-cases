@@ -1,0 +1,5 @@
+1. Use subsample notebook to get a sample of all TCGA samples.
+2. Download files using gdc_client or copy files using script.
+3. Tile images using script.
+4. Create Ludwig dataset using prepare_ludwig_training_file notebook
+4. Run Ludwig
