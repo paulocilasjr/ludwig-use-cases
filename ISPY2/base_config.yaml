@@ -1,0 +1,8 @@
+model_type: ecd
+output_features:
+  - name: PCR
+    type: category
+training:
+  early_stop: 10
+
+    
