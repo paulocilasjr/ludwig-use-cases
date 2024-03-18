@@ -1,0 +1,1 @@
+1. Generally follow the Ludwig instructions here: https://ludwig.ai/latest/examples/mnist/, but after downloading the dataset, you will need to run ```prepare_dataset.py``` to create the dataset csv.

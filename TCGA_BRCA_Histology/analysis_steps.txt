@@ -2,4 +2,15 @@
 2. Download files using gdc_client or copy files using script.
 3. Tile images using script.
 4. Create Ludwig dataset using prepare_ludwig_training_file notebook
-4. Run Ludwig
+5. Run Ludwig
+6. Visualize results. Some useful commands:
+    ludwig visualize --visualization roc_curves_from_test_statistics \
+                  --test_statistics results/experiment_run_3/test_statistics.json \
+                  --output_directory visualizations \
+                  --file_format png --output_feature_name er_status_by_ihc
+
+    ludwig visualize --visualization confusion_matrix \
+                  --ground_truth_metadata results/experiment_run_3/model/training_set_metadata.json \
+                  --output_directory visualizations \
+                  --file_format png --test_statistics results/experiment_run_3/test_statistics.json
+                  
