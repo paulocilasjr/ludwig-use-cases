@@ -4,11 +4,14 @@
     ```
 
     This will create a file called `er_status_samples.txt` with 10 samples from each class.
-2. Download files using gdc_client or copy files using script:
+2. Download histology slides using [gdc_client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool) or copy files using script:
     ```
-    gdc-client download -m er_status_samples.txt
+    ./gdc-client download -m er_status_samples.txt
     ```
-3. Tile images using script.
+3. Tile slides using script:
+    ```
+    python tile_slides.sh
+    ```
 4. Create Ludwig dataset using prepare_ludwig_training_file notebook
 5. Run Ludwig
 6. Visualize results. Some useful commands:
