@@ -12,7 +12,10 @@
     ```
     python tile_slides.sh
     ```
-4. Create Ludwig dataset using prepare_ludwig_training_file notebook
+4. Create Ludwig training file:
+    ```
+    python create_ludwig_training_file.py
+    ```
 5. Run Ludwig
 6. Visualize results. Some useful commands:
     ludwig visualize --visualization roc_curves_from_test_statistics \
