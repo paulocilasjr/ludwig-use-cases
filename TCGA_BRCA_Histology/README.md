@@ -1,5 +1,13 @@
-1. Use subsample notebook to get a sample of all TCGA samples.
-2. Download files using gdc_client or copy files using script.
+1. Use subsample notebook to get a sample of all TCGA samples:
+    ```
+    python sample_manifest.py 10
+    ```
+
+    This will create a file called `er_status_samples.txt` with 10 samples from each class.
+2. Download files using gdc_client or copy files using script:
+    ```
+    gdc-client download -m er_status_samples.txt
+    ```
 3. Tile images using script.
 4. Create Ludwig dataset using prepare_ludwig_training_file notebook
 5. Run Ludwig
