@@ -17,6 +17,9 @@
     python create_ludwig_training_file.py
     ```
 5. Run Ludwig
+    ```
+    ludwig experiment --datasets er_status_all_data.csv --config config.yaml
+    ```
 6. Visualize results. Some useful commands:
     ludwig visualize --visualization roc_curves_from_test_statistics \
                   --test_statistics results/experiment_run_3/test_statistics.json \
