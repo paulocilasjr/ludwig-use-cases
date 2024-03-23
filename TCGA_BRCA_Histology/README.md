@@ -10,7 +10,7 @@
     ```
 3. Tile slides using script:
     ```
-    python tile_slides.sh
+    bash tile_slides.sh
     ```
 4. Create Ludwig training file:
     ```
