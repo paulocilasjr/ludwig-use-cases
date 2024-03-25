@@ -18,7 +18,7 @@
     ```
 5. Run Ludwig
     ```
-    ludwig experiment --datasets er_status_all_data.csv --config config.yaml
+    ludwig experiment --dataset er_status_all_data.csv --config config.yaml
     ```
 6. Visualize results. Some useful commands:
     ludwig visualize --visualization roc_curves_from_test_statistics \
