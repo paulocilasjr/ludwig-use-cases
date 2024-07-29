@@ -12,15 +12,15 @@ Ludwig is an open-source, declarative machine learning framework that makes it e
 
 INSTRUCTIONS_TO_ GET_STARTED
 
-1. Install Ludwig:
+# 1. Install Ludwig:
 
-# CLI command
+CLI command
 $ ```pip install ludwig```
 
-2. Download the MNIST dataset: 
+# 2. Download the MNIST dataset: 
 To get the MNIST dataset generally follow the Ludwig instructions here: https://ludwig.ai/latest/examples/mnist/. The are two ways to dowload the dataset: CLI or Python script. This tutorial we are going to focus on the CLI command.
 
-# CLI command
+CLI command
 $ ```ludwig datasets download mnist```
 
         This command will create a dataset mnist_dataset.csv in the current directory. In addition, there will be directories training/ and testing/ containing the images.
@@ -31,9 +31,9 @@ $ ```ludwig datasets download mnist```
                 label               single digit 0 to 9 indicating what digit is shown in the image
                 split               integer value indicating a training example (0) or test example (2)
 
-3. After downloading the dataset you will need to run ```prepare_dataset.py``` to create the dataset csv file.
+# 3. After downloading the dataset you will need to run ```prepare_dataset.py``` to create the dataset csv file.
 
-# CLI command
+CLI command
 $python3 prepare_dataset.py
 
         The script will create a file - mnist_dataset.csv
@@ -43,9 +43,9 @@ $python3 prepare_dataset.py
                 label               single digit 0 to 9 indicating what digit is shown in the image
                 split               integer value indicating a training example (0) or test example (2)
 
-4. After running ```prepare_dataset.py```, you can run a ludwig experiment from the command line:
+# 4. After running ```prepare_dataset.py```, you can run a ludwig experiment from the command line:
 
-# CLI commmand
+CLI commmand
 $ ```ludwig experiment --dataset mnist_dataset.csv   --config config.yaml```
     
         # ludwig experiment command combines the train and evaluation of the model. If you would like to have them separetely:
@@ -84,4 +84,4 @@ $ ```ludwig experiment --dataset mnist_dataset.csv   --config config.yaml```
             trainer:
               epochs: 5
 
-5. To run on Galaxy, create a zip file with the `/training` and `/testing` directories. Then upload the zip file, `mnist_dataset.csv`, and `config.yaml` to Galaxy and run the experiment.
+# 5. To run on Galaxy, create a zip file with the `/training` and `/testing` directories. Then upload the zip file, `mnist_dataset.csv`, and `config.yaml` to Galaxy and run the experiment.
