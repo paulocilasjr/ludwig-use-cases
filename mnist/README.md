@@ -17,7 +17,7 @@ Ludwig is an open-source, declarative machine learning framework that makes it e
 CLI command
 $ ```pip install ludwig```
 
-# 2. Download the MNIST dataset: 
+## 2. Download the MNIST dataset: 
 To get the MNIST dataset generally follow the Ludwig instructions here: https://ludwig.ai/latest/examples/mnist/. The are two ways to dowload the dataset: CLI or Python script. This tutorial we are going to focus on the CLI command.
 
 CLI command
