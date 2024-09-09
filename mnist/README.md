@@ -12,7 +12,7 @@ Ludwig is an open-source, declarative machine learning framework that makes it e
 
 # INSTRUCTIONS TO GET STARTED
 
-# 1. Install Ludwig:
+## 1. Install Ludwig:
 
 CLI command
 $ ```pip install ludwig```
@@ -31,7 +31,9 @@ $ ```ludwig datasets download mnist```
                 label               single digit 0 to 9 indicating what digit is shown in the image
                 split               integer value indicating a training example (0) or test example (2)
 
-# 3. After downloading the dataset you will need to run ```prepare_dataset.py``` to create the dataset csv file.
+## 3. After downloading 
+
+Run ```prepare_dataset.py``` to create the dataset csv file.
 
 CLI command
 $python3 prepare_dataset.py
@@ -48,4 +50,6 @@ $python3 prepare_dataset.py
 CLI commmand
 $ ```ludwig experiment --dataset mnist_dataset.csv   --config config.yaml```
 
-# 5. To run on Galaxy, create a zip file with the `/training` and `/testing` directories. Then upload the zip file, `mnist_dataset.csv`, and `config.yaml` to Galaxy and run the experiment.
+## 4. Run on Galaxy
+
+Create a zip file with the `/training` and `/testing` directories. Then upload the zip file, `mnist_dataset.csv`, and `config.yaml` to Galaxy and run the experiment.
