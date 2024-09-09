@@ -45,13 +45,13 @@ $python3 prepare_dataset.py
                 label               single digit 0 to 9 indicating what digit is shown in the image
                 split               integer value indicating a training example (0) or test example (2)
 
-# 4. Run a ludwig experiment 
+## 4. Run a ludwig experiment 
 
 Run Ludwig Experiment:
 
 CLI commmand
 $ ```ludwig experiment --dataset mnist_dataset.csv   --config config.yaml```
 
-## 4. Run on Galaxy
+## 5. Run on Galaxy
 
 Create a zip file with the `/training` and `/testing` directories. Then upload the zip file, `mnist_dataset.csv`, and `config.yaml` to Galaxy and run the experiment.
