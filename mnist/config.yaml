@@ -1,7 +1,8 @@
+# config.yaml
 input_features:
-- name: image_path
-  type: image
-  encoder: 
+  - name: image_path
+    type: image
+    encoder:
       type: stacked_cnn
       conv_layers:
         - num_filters: 32
@@ -17,9 +18,14 @@ input_features:
         - output_size: 128
           dropout: 0.4
 
+preprocessing:
+  split:
+    type: fixed
+    column: split
+
 output_features:
- - name: label
-   type: category
+  - name: label
+    type: category
 
 trainer:
-  epochs: 20
+  epochs: 5
