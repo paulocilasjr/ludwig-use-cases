@@ -45,7 +45,9 @@ $python3 prepare_dataset.py
                 label               single digit 0 to 9 indicating what digit is shown in the image
                 split               integer value indicating a training example (0) or test example (2)
 
-# 4. After running ```prepare_dataset.py```, you can run a ludwig experiment from the command line:
+# 4. Run a ludwig experiment 
+
+Run Ludwig Experiment:
 
 CLI commmand
 $ ```ludwig experiment --dataset mnist_dataset.csv   --config config.yaml```
