@@ -52,6 +52,10 @@ Run Ludwig Experiment:
 CLI commmand
 $ ```ludwig experiment --dataset mnist_dataset.csv   --config config.yaml```
 
+obs: Ludwig supports Apple Metal GPUs. To try it out run the command: 
+$ ```LUDWIG_ENABLE_MPS=1 PYTORCH_ENABLE_MPS_FALLBACK=1 ludwig experiment --dataset mnist_dataset.csv --config config.yaml```
+
+
 ## 5. Run on Galaxy
 
 Create a zip file with the `/training` and `/testing` directories. Then upload the zip file, `mnist_dataset.csv`, and `config.yaml` to Galaxy and run the experiment.
