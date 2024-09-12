@@ -21,6 +21,7 @@ $ ```pip install ludwig```
 To get the MNIST dataset generally follow the Ludwig instructions here: https://ludwig.ai/latest/examples/mnist/. The are two ways to dowload the dataset: CLI or Python script. This tutorial we are going to focus on the CLI command.
 
 CLI command
+
 $ ```ludwig datasets download mnist```
 
         This command will create a dataset mnist_dataset.csv in the current directory. In addition, there will be directories training/ and testing/ containing the images.
@@ -36,6 +37,7 @@ $ ```ludwig datasets download mnist```
 Run ```prepare_dataset.py``` to create the dataset csv file.
 
 CLI command
+
 $python3 prepare_dataset.py
 
         The script will create a file - mnist_dataset.csv
@@ -50,12 +52,14 @@ $python3 prepare_dataset.py
 Run Ludwig Experiment:
 
 CLI commmand
+
 $ ```ludwig experiment --dataset mnist_dataset.csv   --config config.yaml```
 
 obs: Ludwig supports Apple Metal GPUs. To try it out run the command: 
+
 $ ```LUDWIG_ENABLE_MPS=1 PYTORCH_ENABLE_MPS_FALLBACK=1 ludwig experiment --dataset mnist_dataset.csv --config config.yaml```
 
 
 ## 5. Run on Galaxy
 
-Create a zip file with the `/training` and `/testing` directories. Then upload the zip file, `mnist_dataset.csv`, and `config.yaml` to Galaxy and run the experiment.
+Create a zip file with the `/training` and `/testing` directories. Go to: https://cancer.usegalaxy.org/. Then upload the zip file, `mnist_dataset.csv`, and `config.yaml` to Galaxy and run the Ludwig experiment tool. *Soon tutorial with more details*
