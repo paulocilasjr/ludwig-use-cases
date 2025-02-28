@@ -15,7 +15,7 @@ if len(sys.argv) == 2:
     except ValueError:
         print('Error: Argument must be an integer.')
         sys.exit(1)
-except (ValueError, IndexError):
+else:
     er_df_sample = er_df  # Use all available rows if no valid argument is given
 
 # Write output to file
