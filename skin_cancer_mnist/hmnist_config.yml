@@ -1,0 +1,38 @@
+input_features:
+  - name: image
+    type: image
+    encoder:
+      type: stacked_cnn
+      conv_layers:
+        - num_filters: 32
+          filter_size: 3
+          stride: 1
+          padding: same
+          pool_size: 2
+          pool_stride: 2
+        - num_filters: 64
+          filter_size: 3
+          stride: 1
+          padding: same
+          pool_size: 2
+          pool_stride: 2
+      dropout: 0.2
+    column: image
+
+output_features:
+  - name: label
+    type: category
+    num_classes: 7
+
+training:
+  batch_size: 32
+  epochs: 50
+  early_stop: 5
+  learning_rate: 0.001
+  optimizer:
+    type: adam
+
+preprocessing:
+  split:
+    type: fixed
+    column: split
