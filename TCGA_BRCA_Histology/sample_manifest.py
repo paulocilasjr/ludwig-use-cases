@@ -33,4 +33,3 @@ date_str = datetime.now().strftime('%m%d%y')
 output_filename = f'er_status_samples_{date_str}.txt'  # create the filename
 
 er_df_sample.to_csv(output_filename, sep='\t', index=False)
-
