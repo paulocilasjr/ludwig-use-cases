@@ -1,0 +1,15 @@
+input_features:
+  - name: embedding
+    type: vector
+
+preprocessing:
+  split:
+    type: fixed
+    column: split
+
+output_features:
+  - name: label
+    type: category
+
+trainer:
+  epochs: 5

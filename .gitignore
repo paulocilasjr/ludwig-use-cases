@@ -1,3 +1,8 @@
+*.csv
+*.jpg
+.DS_Store
+*.csv
+*.zip
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
